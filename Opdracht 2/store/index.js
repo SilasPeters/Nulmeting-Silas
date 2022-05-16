@@ -27,7 +27,7 @@ export const actions = {
       url: "https://d5gryl2o0g.execute-api.eu-west-1.amazonaws.com/development/echo",
       method: "POST",
       headers: {
-        "x-api-key": API_KEY,
+        "x-api-key": "test",
       },
       data,
     };
