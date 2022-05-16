@@ -19,7 +19,6 @@ export const mutations = {
 };
 export const actions = {
   async echo({ commit }, formData) {
-    alert(process.env.API_KEY); //<<<===== undefined
     let data = {
       echo: formData,
     };
@@ -27,11 +26,13 @@ export const actions = {
       url: "https://d5gryl2o0g.execute-api.eu-west-1.amazonaws.com/development/echo",
       method: "POST",
       headers: {
-        "x-api-key": "test",
+        "x-api-key": process.env.API_KEY,
       },
       data,
     };
-    let response = "kaas"//await this.$axios(options);
+    //alert(JSON.stringify(options));
+    let response = await this.$axios(options);//this.$axios.$get(options);
+    alert(response);
     commit("setEchoResponse", response);
   },
 };

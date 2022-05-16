@@ -1,7 +1,5 @@
 <template>
 	<div>
-		<Menu></Menu>
-
 		<h1>Messages:</h1>
 		<pre>{{messages}}</pre> <!--is een pre zodat \n gebruikt kan worden in script/messages hieronder-->
 		<button @click="clear()">Clear</button><br><br>

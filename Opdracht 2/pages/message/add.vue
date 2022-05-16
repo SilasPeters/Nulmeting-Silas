@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<Menu></Menu>
 		<h1>Maak hier een message aan</h1>
 
 		<label>Message:</label>

@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Menu></Menu>
-
     <h1>Echo...</h1>
 		<form v-on:submit.prevent="submit"> <!--voorkomt een redirection waardoor de state verloren raakt, maar voert wel submit() uit-->
 			<label>Wat zijn je favoriete dieren?</label><br>

@@ -1,7 +1,5 @@
 <template>
-	<div>
-		<Menu></Menu>
-		
+	<div>		
 		<Counter></Counter>
 	</div>
 </template>

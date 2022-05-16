@@ -1,7 +1,5 @@
 <template>
 	<div>
-		<Menu></Menu>
-
 		<h2 id="kaas">KAAS!</h2>
 		<p>{{message}}</p>
 
