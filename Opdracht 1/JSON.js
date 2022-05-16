@@ -1,0 +1,1 @@
+const axios = require('axios').default;'use strict'// GET request gebruikmakend van de Axios APIaxios({    method: 'get',    url: 'https://inwerk-files.s3-eu-west-1.amazonaws.com/opdracht3.json'})    .then(function (response) {        console.log(response.data);    });
