@@ -1,7 +1,7 @@
 export const state = () => ({
   count: 0,
   messages: [],
-	echoResponse: "test",
+	echoResponse: "",
 });
 export const mutations = {
   increment(state) {
@@ -19,6 +19,7 @@ export const mutations = {
 };
 export const actions = {
   async echo({ commit }, formData) {
+    alert(process.env.API_KEY); //<<<===== undefined
     let data = {
       echo: formData,
     };
@@ -26,7 +27,7 @@ export const actions = {
       url: "https://d5gryl2o0g.execute-api.eu-west-1.amazonaws.com/development/echo",
       method: "POST",
       headers: {
-        "x-api-key": "apikeyhere",
+        "x-api-key": API_KEY,
       },
       data,
     };
