@@ -23,18 +23,14 @@ export const actions = {
 			echo: formData
 		}
 		let options = {
-			url: "https://d5gryl2o0g.execute-api.eu-west-1.amazonaws.com/development/echo",
+			url: "https://86a4h9y007.execute-api.eu-west-1.amazonaws.com/development/echo",
 			method: "POST",
 			headers: {
 				"x-api-key": process.env.API_KEY
 			},
 			data
 		}
-		console.log(JSON.stringify(options));
 		let response = await this.$axios(options);
-		// De alerts hieronder worden nooit aangeroepen
-		console.log(response);
-		alert(response.data);
 		commit('setEchoResponse', response.data);
 	}
 }
