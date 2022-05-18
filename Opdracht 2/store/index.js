@@ -30,10 +30,10 @@ export const actions = {
 			},
 			data
 		}
-		alert(JSON.stringify(options));
+		console.log(JSON.stringify(options));
 		let response = await this.$axios(options);
 		// De alerts hieronder worden nooit aangeroepen
-		alert(response);
+		console.log(response);
 		alert(response.data);
 		commit('setEchoResponse', response.data);
 	}
